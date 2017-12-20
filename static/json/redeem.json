@@ -1,0 +1,49 @@
+{
+    "replyInformation": {
+        "responseType": "N",
+        "responseCode": "WM0000",
+        "responseMessage": null
+    },
+    "responseHeader": {
+        "cicsCodeType": "",
+        "responseType": "N",
+        "appSymbol": "WM",
+        "returnCode": "0000",
+        "errorPositio": "0000",
+        "termCode": "ECTLBB8",
+        "termSequence": "",
+        "transType": "2303",
+        "appType": "52",
+        "transSymbol": "",
+        "transDate": "20171206",
+        "transTime": "141136",
+        "billDate": "",
+        "transLOG": "",
+        "billSerialNO": "",
+        "multiPage": "",
+        "zipFlag": "0",
+        "encryptFlag": "0",
+        "netCode": "01310150999",
+        "authorLog": "",
+        "summons": "",
+        "fillerA": "",
+        "fillerB": "",
+        "fillerC": "",
+        "fillerD": "",
+        "allPackLen": "0",
+        "recordCount": null,
+        "voucher": null
+    },
+    "redemResult": {
+        "investorName": "交行客户",
+        "transactionAccountID": "00113250005556572",
+        "depositAcct": "6222600140004825644",
+        "fundChar": "002",
+        "fundCode": "2181090276",
+        "fundName": "CB09029a",
+        "applicationVol": 60000,
+        "largeRedemptionFlag": "",
+        "appSheetSerialNo": "139145011706274000100013",
+        "lotNo": "2017062740"
+    }
+}

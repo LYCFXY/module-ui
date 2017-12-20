@@ -1,0 +1,48 @@
+$redColor: #FA5555;
+$mainColor: #04357B;
+#product-select-container {
+    width: 100%;
+    background: #fff;
+    .product-container {
+        width: 100%;
+        .product-pagination {
+            text-align: center;
+        }
+        .product-content {
+                text-align: center;
+                padding-bottom: 1em;
+                .item-title,
+                .item-content{
+                    font-size: .9em;
+                    line-height: 2.5em;
+                }
+                .item-content {
+                    text-align: left;
+                }
+                .item-title {
+                    font-weight: 700;
+                    text-align: right;
+                }
+                .product-property {
+                    display: block;
+                }
+                .product-property::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+        }
+        .product-search {
+            h3 {
+                padding-top: .5em;
+                font-size: 1em;
+            }
+            .send-password {
+                margin-left: 1em;
+            }
+        }
+        .red {
+            color: $redColor;
+        }
+    }
+}

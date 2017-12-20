@@ -1,0 +1,195 @@
+$mainColor: #04357B;
+$redColor: #FA5555;
+#product-select-container {
+    background: #ccc;
+    .red {
+        color: $redColor;
+    }
+    .product-earnings {
+        padding-top: 6px;
+        padding-bottom: 12px;
+        border: 1px dashed #ddd;
+        border-bottom: none;
+        &::after {
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .earnings-title {
+            font-size: 14px;
+            color: #999;
+            span {
+                color: #333;
+            }
+        }
+        .rmb-number, .earnings-number {
+            font-size: 16px;
+            color: #333;
+            padding-top: 0.5em;
+        }
+        .earnings-number {
+            color: #FA5555;
+        }
+
+    }
+
+   .product-container {
+        display: block;
+        padding-left: .5em;
+        .product-search {
+            padding: 1em;
+            margin-bottom: 10px;
+            line-height: 46px;
+            color: #333;
+            font-weight: 700;
+            background: #fff;
+            .search-box {
+                height: 2em;
+                padding: 2em;
+                width: 2em;
+                background: #f60;
+            }
+        }
+    }
+
+    .product-sort {
+        /*background: #ccc;*/
+        span {
+            background: $mainColor;
+            cursor:pointer;
+            color: #ffffff;
+            padding: 2px 4px;
+        }
+        .product-comparison {
+            float: right;
+        }
+    }
+
+    .product-list {
+        width: 100%;
+        margin-top: 10px;
+        border: 1px dashed #ddd;
+        border-collapse: collapse;
+        .search-reminder {
+            padding: 10px 0;
+            text-align: center;
+            color: #999;
+            font-size: 0.8em;
+        }
+        tr {
+            text-align: center;
+            height: 80px;
+            border-bottom: 1px dashed #ddd;
+            .product-title {
+                overflow: hidden;
+                text-overflow:ellipsis;
+                white-space: nowrap;
+                height: 40px;
+                line-height: 40px;
+                font-size: 15px;
+                font-family: "微软雅黑";
+                font-weight: 700;
+            }
+            div.product-title-fix {
+                width: 12em;
+            }
+            .product-feture {
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+                color: #888;
+                text-align: center;
+                span{
+                    color: #ffffff;
+                    padding: 0 .25em;
+                }
+                span:nth-child(1) {
+                    background: $mainColor;
+                    margin-right: 10px;
+                    }
+                span:nth-child(2) {
+                    background: $mainColor;
+                    margin-right: 10px;
+                }
+                span:nth-child(3) {
+                    border: 1px solid $mainColor;
+                    color: $mainColor;
+                }
+            }
+
+            .product-content {
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+                color: #999;
+            }
+
+            .product-date{
+                p{
+                    padding: 0;
+                    margin: 0;
+                    font-size: 14px;
+                    color: #666;
+                }
+            }
+
+            .product-cancel,
+            .product-buy,
+            .product-redeem{
+                margin: 0 4px;
+                padding: 4px 0;
+                font-size: 14px;
+                cursor: pointer;
+                color: #fff;
+            }
+            .product-buy {
+                background: $redColor;
+                margin-bottom: 0.2em;
+            }
+            .product-redeem {
+                border: 1px solid #333;
+                color: #333;
+            }
+            .product-cancel {
+                background: #999;
+            }
+        }
+    }
+    table.product-manage {
+        margin: 0;
+    }
+    .product-pagination {
+        text-align: center;
+        border: 1px dashed #ddd;
+        .print {
+            font-size: 1em;
+            color: #fff;
+            span{
+                display: inline-block;
+                margin-top: 10px;
+                padding: 2px 20px;
+                background: $mainColor;
+            }
+        }
+    }
+
+    .explain{
+        padding-top: 1.5em;
+        h5 {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        p {
+            margin: 0;
+            padding: 5px 30px;
+            font-size: 0.875em;
+        }
+        p:last-child {
+            padding-top: 2em;
+            color: $mainColor;
+            text-align: center;
+        }
+    }
+}

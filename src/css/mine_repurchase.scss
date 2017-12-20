@@ -1,0 +1,92 @@
+.product-repurchase {
+        display: block;
+        width: 100%;
+        margin-left: .5em;
+        background: #fff;
+        padding: 1em;
+        .red {
+            color: $redColor;
+        }
+        .product-header {
+            margin-bottom: 1em;
+        }
+
+        .product-content {
+            text-align: center;
+            padding-bottom: 1em;
+            .item-title,
+            .item-content{
+                font-size: .9em;
+                line-height: 2.5em;
+            }
+            .item-content {
+                text-align: left;
+            }
+            .item-title {
+                font-weight: 700;
+                text-align: right;
+            }
+            .product-property {
+                display: block;
+            }
+            .product-property::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+        }
+        .product-search {
+            line-height: 46px;
+            color: #333;
+            background: #fff;
+            hr {
+                border: none;
+                border-top: 1px solid #ddd;
+                padding-top: 1em;
+                margin-bottom: 1em;
+            }
+            .card-number {
+                font-weight: 700;
+                text-align: right;
+                font-size: 1em;
+            }
+            .card-explain span {
+                background: $mainColor;
+                text-align: left;
+                padding: .2em .5em;
+                color: #fff;
+            }
+            .search-box {
+                height: 2em;
+                padding: 2em;
+                width: 2em;
+                background: #f60;
+            }
+        }
+        .product-title {
+            font-size: 1.2em;
+        }
+        .product-feture {
+                height: 40px;
+                line-height: 40px;
+                font-size: 14px;
+                color: #888;
+                span{
+                    color: #ffffff;
+                    padding: 0 .25em;
+                }
+                span:nth-child(1) {
+                    background: $mainColor;
+                    margin-right: 10px;
+                    }
+                span:nth-child(2) {
+                    background: $mainColor;
+                    margin-right: 10px;
+                }
+                span:nth-child(3) {
+                    border: 1px solid $mainColor;
+                    color: $mainColor;
+                }
+        }
+    }

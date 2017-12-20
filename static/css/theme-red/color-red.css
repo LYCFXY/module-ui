@@ -1,0 +1,24 @@
+.header{
+    background-color: #7f2d2e;
+}
+.plugins-tips{
+    background: #f2f2f2;
+}
+.plugins-tips a{
+    color: #7f2d2e;
+}
+.el-upload--text em {
+    color: #7f2d2e;
+}
+.pure-button{
+    background: #7f2d2e;
+}
+.vue-datasource .btn-primary {
+    color: #fff;
+    background-color: #7f2d2e !important;
+    border-color: #7f2d2e !important;
+}
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+    background-color: #7f2d2e !important;
+    border-color: #7f2d2e !important;
+}

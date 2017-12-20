@@ -1,0 +1,67 @@
+{   "code":0,
+    "subcode":0,
+    "message":"",
+    "default":0,
+    "data": {
+                "topList":[
+                            {
+                                "id":4,"listenCount":19700000,
+                                "picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_4_300_204108506.jpg",
+                                "songList":[
+                                                {
+                                                    "singername":"鹿晗","songname":"心率（Like a dream）"
+                                                },
+                                                {
+                                                    "singername":"王俊凯","songname":"焕蓝·未来（Karry On）"
+                                                },
+                                                {
+                                                    "singername":"李荣浩","songname":"我看着你的时候"
+                                                }
+                                            ],
+                                "topTitle":"广汽传祺·巅峰榜·流行指数",
+                                "type":0
+                            },
+                            {
+                                "id":26,"listenCount":19400000,
+                                "picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_26_300_203617292.jpg",
+                                "songList":[
+                                                {"singername":"校长","songname":"带你去旅行"
+                                                },
+                                                {
+                                                    "singername":"金志文","songname":"远走高飞 (独唱版)"
+                                                },
+                                                {
+                                                        "singername":"方大同","songname":"春风吹"
+                                                }
+                                           ],
+                                "topTitle":"巅峰榜·热歌","type":0
+                            },
+                            {   "id":27,"listenCount":15800000,"picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_27_300_204108506.jpg",
+                                "songList":
+                                            [
+                                                {
+                                                    "singername":"鹿晗","songname":"心率（Like a dream）"
+                                                },
+                                                {
+                                                    "singername":"王俊凯","songname":"焕蓝·未来（Karry On）"
+                                                },
+                                                {
+                                                    "singername":"李荣浩","songname":"我看着你的时候"
+                                                }
+                                            ],
+                                "topTitle":"巅峰榜·新歌","type":0
+                            },
+                            {"id":51,"listenCount":9600000,"picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_51_300_203451421.jpg","songList":[{"singername":"毛不易","songname":"消愁 (Live)"},{"singername":"毛不易","songname":"深夜一角 (Live)"},{"singername":"MC天佑/毛不易","songname":"如果有一天我变得很有钱 (Live)"}],"topTitle":"巅峰榜·明日之子","type":0},
+                            {"id":25,"listenCount":9500000,"picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_25_300_204176597.jpg","songList":[{"singername":"杨千嬅/叶晓粤","songname":"平凡之路 (Live)"},{"singername":"李荣浩/张泽","songname":"内疚 (Live)"},{"singername":"周深/郭沁","songname":"大鱼 (Live)"}],"topTitle":"问问音箱·巅峰榜·中国新歌声","type":0},
+                            {"id":28,"listenCount":15585120,"picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_28_300_109501554.jpg","songList":[{"singername":"赵方婧","songname":"尽头"},{"singername":"薛明媛/朱贺","songname":"欧皇"},{"singername":"莫关雨","songname":"最美情侣"}],"topTitle":"巅峰榜·网络歌曲","type":0},
+                            {"id":5,"listenCount":9007380,"picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_5_300_203862041.jpg","songList":[{"singername":"关晓彤","songname":"都二十了"},{"singername":"金志文","songname":"给我一点寂寞的时间"},{"singername":"刘惜君","songname":"罪"}],"topTitle":"巅峰榜·内地","type":0},
+                            {"id":6,"listenCount":4397680,"picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_6_300_203827066.jpg","songList":[{"singername":"杨丞琳","songname":"青春住了谁"},{"singername":"光良","songname":"是不是还少了什么"},{"singername":"周柏豪","songname":"天网"}],"topTitle":"巅峰榜·港台","type":0},
+                            {"id":3,"listenCount":13751570,"picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_3_300_203810208.jpg","songList":[{"singername":"Alan Walker","songname":"The Spectre"},{"singername":"Niall Horan","songname":"Too Much To Ask"},{"singername":"ZAYN/Sia","songname":"Dusk Till Dawn"}],"topTitle":"巅峰榜·欧美","type":0},
+                            {"id":16,"listenCount":8713560,"picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_16_300_203846270.jpg","songList":[{"singername":"BOBBY (金知元)","songname":"I LOVE YOU (사랑해)"},{"singername":"여자친구 (GFRIEND)","songname":"여름비 (SUMMER RAIN) (夏雨)"},{"singername":"아이유 (IU)","songname":"가을 아침 (秋日早晨)"}],"topTitle":"巅峰榜·韩国","type":0},
+                            {"id":17,"listenCount":1655430,"picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_17_300_203820499.jpg","songList":[{"singername":"田口淳之介","songname":"DIMENSION"},{"singername":"中島美嘉 (なかしま みか)","songname":"电光石火之间"},{"singername":"宇多田ヒカル (宇多田光)","songname":"Forevermore"}],"topTitle":"巅峰榜·日本","type":0},
+                            {"id":201,"listenCount":295794,"picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/20150127163830.jpg","songList":[{"singername":"BTS","songname":"DNA"},{"singername":"鹿晗","songname":"追梦赤子心 (《空天猎》电影片尾曲)"},{"singername":"Taylor Swift","songname":"Look What You Made Me Do"}],"topTitle":"巅峰榜·MV","type":0},
+                            {"id":52,"listenCount":1439480,"picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_52_300_203600432.jpg","songList":[{"singername":"Terry Zhong/EnjiA","songname":"8PM"},{"singername":"声音玩具","songname":"我有一个梦想"},{"singername":"余佳运/Jony J","songname":"Almost Home"}],"topTitle":"巅峰榜·腾讯音乐人原创榜","type":0},
+                            {"id":36,"listenCount":3997560,"picUrl":"http://y.gtimg.cn/music/common/upload/iphone_order_channel/toplist_36_300_200732018.jpg","songList":[{"singername":"胡赟兆","songname":"啷个哩个啷"},{"singername":"苏悦宁","songname":"红色高跟鞋"},{"singername":"胡慧","songname":"分手快乐"}],"topTitle":"巅峰榜·K歌金曲","type":0}
+                        ]
+        }
+}

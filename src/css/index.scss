@@ -1,0 +1,39 @@
+    $mainColor: #04357B;
+    .container {
+        background: #ccc;
+        margin:0 auto;
+        .children-list {
+            border-bottom: 1px solid #04647C;
+            background: $mainColor;
+            &:hover {
+                background: #073B87;
+            }
+        }
+        .menu-expanded {
+            text-align: center;
+            .el-menu-vertical-demo {
+                padding: 1em;
+                background: $mainColor;
+            }
+        }
+
+    }
+
+    .arr-header {
+        span {
+            background: $mainColor;
+        }
+        .com {
+            float: right;
+        }
+    }
+
+    .fade-enter-active,
+    .fade-leave-active {
+        transition: all .2s ease;
+    }
+
+    .fade-enter,
+    .fade-leave-active {
+        opacity: 0;
+    }
