@@ -8,6 +8,7 @@ export default new Vuex.Store({
         repurchaseIndex:'',
         count: 0,
         selected: 'profile',
+        buyCommitData:[],
         searchData: [],
         tableData: [],
         cardNumber: [{
@@ -31,6 +32,9 @@ export default new Vuex.Store({
         },
         selectedCard (state, payload) {
             state.selectedCard = payload
+        },
+        buyData (state, payload) {
+            state.buyCommitData = payload
         }
     }
 })

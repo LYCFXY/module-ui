@@ -24,6 +24,7 @@
                            <router-view></router-view>
                         </el-tab-pane>
                         <el-tab-pane label="自助购买修改/撤销">
+                           <!--  <SelfModify></SelfModify> -->
                             <div class="self-revise">
                                 <p class="sign-memory">我的签约记录</p>
                                 <table cellspacing="0" cellpadding="0" class="product-list product-manage">
@@ -75,7 +76,7 @@
 </template>
 
 <script>
-
+    import SelfModify from './SelfModify';
     export default {
         name: 'home',
         data() {
@@ -86,6 +87,7 @@
                 cartvalue: '',
             }
         },
+        components: { SelfModify },
         mounted(){
             this.$nextTick(() => {
                 this.cardDefault();
@@ -114,7 +116,7 @@
             },
             handleCurrentChange(val) {
                 console.log(`当前页: ${val}`);
-            },
+            }
 
         }
     }

@@ -295,10 +295,9 @@
               alert(this.radio)
             },
             selfBuyResult() {
-                if(this.radio == ''){
-                  return
-                }
+
                 var _this = this;
+
                 /*this.$axios.get('http://192.168.191.1:8082/static/json/buy.json',{})*/
                 this.$axios.post(SEARCH_URL, qs.stringify(this.searchData)
                 )

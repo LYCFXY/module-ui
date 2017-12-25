@@ -66,7 +66,7 @@
 
                    <el-form-item>
                        <el-col :span="8" class="card-number">可用余额：</el-col>
-                       <el-col :span="6">5,000,000,00</el-col>
+                       <el-col :span="6">{{ available() }}</el-col>
                        <el-col :span="4" class="card-explain">
                            <span>资金归集</span>
                        </el-col>
@@ -250,14 +250,21 @@
                     "endDate":""
                 }
           },
-          repurchaseIndex(){
+          repurchaseIndex() {
             return this.$store.state.repurchaseIndex;
           },
-          repurchaseData(){
+          repurchaseData() {
             return this.$store.state.searchData;
+          },
+          availableData() {
+            return this.$store.state.buyCommitData[0];
           }
         },
         methods:{
+            available() {
+              console.log(this.availableData.accountbalance)
+              return this.availableData.accountbalance
+            },
             getData() {
               let allData = this.repurchaseData;
               let indexData = this.repurchaseIndex;

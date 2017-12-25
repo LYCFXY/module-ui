@@ -16,17 +16,19 @@ import 'components/mockjs/all.js';
 import store from './store/index';
 
 /*折线图插件*/
-import echarts from 'echarts';
-Vue.prototype.$echarts = echarts;
+/*import echarts from 'echarts';
+Vue.prototype.$echarts = echarts;*/
 
 // axios.defaults.baseURL = 'http://ownedexpress.fenghuangyouxuan.com/api';  //生产
 
-//axios.defaults.baseURL = 'http://123.57.175.234:8081'; //测试
-
+axios.defaults.baseURL = 'http://183.66.65.227:8083/bdp-trans'; //测试
+/*http://192.168.241.175:8080*/
+/*http://192.168.24.182:8080/*/
+/*http://183.66.65.227:8083*/
 
 axios.defaults.withCredentials = true;
 
-axios.defaults.timeout =  2000;
+axios.defaults.timeout =  3000;
 var alert = require('element-ui').MessageBox.alert;
 //var tokenBugNum = 0;
 //var tokenBug = function(msg){

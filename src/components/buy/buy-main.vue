@@ -110,7 +110,7 @@
                                     </td>
                                     <td>
                                         <div class="product-title">手机银行专享</div >
-                                        <div class="product-buy" @click="$goRoute(links[0].route), repurchaseGo(index)">购买</div>
+                                        <div class="product-buy" @click="$goRoute(links[0].route), repurchaseGo(index), buyCommit()">购买</div>
                                     </td>
                                 </tr>
                             </table>
@@ -174,6 +174,7 @@
 <script>
     import TableTwo from './buy-table2';
     import { SEARCH_URL } from '../../api/api.js';
+    import { BUY_COMMIT_URL } from '../../api/api.js';
 
     var qs = require('qs');
     const cityOptions= ['活期类', '定期类']
@@ -185,7 +186,6 @@
         data() {
             return {
                 /*搜索数据*/
-                /*tableData: [],*/
                 /*搜索名称*/
                 searchContent: '',
                  /*防止按钮多次触发*/
@@ -317,19 +317,37 @@
                     "endDate": this.getdate(1),
                     "fundCode": this.searchContent.trim(),
                     "transMode": "0",
-                    "depositAcct": "6222600610018764161",
+                    "depositAcct": "6222600140004825644",
                     "fundChar": this.fundChar(),
                     "startDate": this.getdate(0),
                     "currencyCode": this.coinCode(),
                     "fundLevel": this.fundLevel(),
-                    "minSubsAmountByIndi": this.minSubsAmountByIndi()
+                    "minBidsAmountByIndi": this.minSubsAmountByIndi()
+                }
+            },
+            buyData () {
+                return {
+                    "depositAcct": "6222600140004825644"
                 }
             }
         },
         methods:{
+            buyCommit() {
+                var _this = this;
+                this.$axios.post(BUY_COMMIT_URL, qs.stringify(this.buyData)
+                ).then((res) => {
+                    let allData = res.data;
+                    this.$store.commit('buyData', allData)
+                }).catch(function(err) {
+                   _this.$alert('网络错误')
+                })
+            },
             searchResult() {
 
                 var _this = this;
+
+                this.$store.commit('searchData', [])
+
                 this.$axios.post(SEARCH_URL, qs.stringify(this.searchData)
                 )
                 /*this.$axios.get('http://192.168.191.1:8082/static/json/buy.json', {})*/
@@ -345,7 +363,7 @@
 
                     allData.map((value) => {
                          /*产品类型*/
-                        if(value.fundChar == '001' || value.fundChar == '002' || value.fundChar == '003'){
+                        if(value.fundChar == '001' || value.fundChar == '002' || value.fundChar == '004'){
                             return value.fundChar = '活期类'
                         }else{
                             return  value.fundChar = '定期类'
@@ -409,7 +427,6 @@
             },
             getTotalCount () {
                 this.totalCount = this.tableData.length;
-                console.log(this.totalCount)
             },
             getdate(index) {
                 if(this.dataRange[index]){
@@ -455,14 +472,15 @@
             },
             /*fundChar转换*/
             fundChar() {
-                if(this.checkedCities.length = 1 && this.checkedCities[0] == '活期类'){
-                    let result = '001';
-                    return result;
-                } else if (this.checkedCities.length = 1 && this.checkedCities[0] !== '活期类'){
-                    let resultElse = '002';
-                    return resultElse;
-                } else {
-                    return '';
+                if(this.checkedCities.length == 0 || this.checkedCities.length == 2){
+                    return ''
+                }
+                if(this.checkedCities.length == 1 && this.checkedCities[0] == "活期类"){
+                   return '001'
+                }
+
+                if(this.checkedCities.length == 1 && this.checkedCities[0] == "定期类"){
+                   return '002'
                 }
             },
             /*风险等级*/
@@ -493,7 +511,7 @@
                         }
                         return item;
                      })
-                    return data;
+                    return data.join(',');
                 }else{
                     return '';
                 }
@@ -509,7 +527,7 @@
                                 item = '5';
                                 break;
                             case '5-600万':
-                                item = '5-6';
+                                item = '5-600';
                                 break;
                             case '10-600万':
                                 item = '10-600';
@@ -520,7 +538,7 @@
                         }
                         return item;
                     })
-                    return data;
+                    return data.join(',');
                 }else{
                     return '';
                 }

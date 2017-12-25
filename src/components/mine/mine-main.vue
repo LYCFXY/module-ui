@@ -77,7 +77,7 @@
                                        <div class="product-content">至今预期收益</div>
                                    </td>
                                    <td>
-                                       <div class="product-buy" @click="$goRoute(links[0].route), repurchaseGo(index)">
+                                       <div class="product-buy" @click="$goRoute(links[0].route), repurchaseGo(index), buyCommit()">
                                        再购买
                                        </div>
                                        <div v-if="item.fastFlag == 1" class="product-redeem" @click="$goRoute(links[1].route), repurchaseGo(index)">赎回</div >
@@ -203,6 +203,7 @@
 
 <script>
     var qs = require('qs');
+    import { BUY_COMMIT_URL } from '../../api/api.js';
     import { MINE_URL } from '../../api/api.js';
     const cityOptions= ['专享产品', '活期类', '定期类', '结构性','外币类','私人银行']
     const cityOptions1= ['极地风险', '低风险', '较低风险', '中等风险','较高风险','高风险']
@@ -358,9 +359,24 @@
                     "startDate": "",
                     "currencyCode": this.coinCode()
                 }
+            },
+            buyData () {
+                return {
+                    "depositAcct": "6222600140004825644"
+                }
             }
         },
         methods:{
+            buyCommit() {
+                var _this = this;
+                this.$axios.post(BUY_COMMIT_URL, qs.stringify(this.buyData)
+                ).then((res) => {
+                    let allData = res.data;
+                    this.$store.commit('buyData', allData)
+                }).catch(function(err) {
+                   _this.$alert('网络错误')
+                })
+            },
             searchResult() {
                 var _this = this;
                 if(this.preventData){ return }

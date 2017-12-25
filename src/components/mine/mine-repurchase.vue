@@ -66,7 +66,7 @@
 
                    <el-form-item>
                        <el-col :span="8" class="card-number">可用余额：</el-col>
-                       <el-col :span="6">5,000,000,00</el-col>
+                       <el-col :span="6">{{ available() }}</el-col>
                        <el-col :span="4" class="card-explain">
                            <span>资金归集</span>
                        </el-col>
@@ -250,14 +250,21 @@
                     "endDate":""
                 }
           },
-          repurchaseIndex(){
+          repurchaseIndex() {
             return this.$store.state.repurchaseIndex;
           },
-          repurchaseData(){
+          repurchaseData() {
             return this.$store.state.searchData;
+          },
+          availableData() {
+            return this.$store.state.buyCommitData[0];
           }
         },
         methods:{
+            available() {
+              console.log(this.availableData.accountbalance)
+              return this.availableData.accountbalance
+            },
             getData() {
               let allData = this.repurchaseData;
               let indexData = this.repurchaseIndex;
@@ -272,7 +279,7 @@
 
                 let reg = /(^[1-9]([0-9]+)?(\.[0-9]{1,2})?$)|(^(0){1}$)|(^[0-9]\.[0-9]([0-9])?$)/;
                 if( !reg.test(this.sizeForm.purchase) ){
-                  this.$alert('请输入正确的数字，最多保留两位小数','赎回份额')
+                  this.$alert('请输入正确的数字，最多保留两位小数','购买金额')
                   return
                 }
                 /*this.$axios.get('http://192.168.191.1:8082/static/json/buy-product.json', {}
